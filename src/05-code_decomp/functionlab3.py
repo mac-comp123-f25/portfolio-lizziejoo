@@ -1,6 +1,17 @@
 import turtle
 import math
 
+def drawFiveCircles(turt, radius, centerX, centerY):
+    turt.up()
+    turt.goto(centerX, centerY)
+    turt.down()
+    for i in range(5):
+        turt.begin_fill()
+        turt.circle(radius)
+        turt.end_fill()
+        turt.left(72)
+    """This function draws five circles on the screen given a turtle, radius, and coordinates."""
+
 """ Drawing boundaries of petal and filling it green. 
 Petals are drawn counterclockwise on top of each other, being drawn from the center.
 4 turtles in the code. """
@@ -29,23 +40,9 @@ stampTurtle.speed(0)
 stampTurtle.shape("turtle")
 stampTurtle.hideturtle()
 
-sepalTurtle.up()                    # TODO: Step 2: start here
-sepalTurtle.goto(0, 0)
-sepalTurtle.down()
-for i in range(5):
-    sepalTurtle.begin_fill()
-    sepalTurtle.circle(50)
-    sepalTurtle.end_fill()
-    sepalTurtle.left(72)
+drawFiveCircles(sepalTurtle, 50, 0, 0)
 
-petalTurtle.up()
-petalTurtle.goto(0, 0)
-petalTurtle.down()
-for i in range(5):
-    petalTurtle.begin_fill()
-    petalTurtle.circle(25)
-    petalTurtle.end_fill()
-    petalTurtle.left(72)
+drawFiveCircles(petalTurtle, 25, 0, 0)
 
 centerTurtle.up()
 centerTurtle.goto(0, -15)
@@ -59,23 +56,9 @@ stampTurtle.goto(-2,0)
 stampTurtle.down()
 stampTurtle.stamp()
 
-sepalTurtle.up()
-sepalTurtle.goto(0, 220)
-sepalTurtle.down()
-for i in range(5):
-    sepalTurtle.begin_fill()
-    sepalTurtle.circle(50)
-    sepalTurtle.end_fill()
-    sepalTurtle.left(72)
+drawFiveCircles(sepalTurtle, 50, 0, 220)
 
-petalTurtle.up()
-petalTurtle.goto(0, 220)
-petalTurtle.down()
-for i in range(5):
-    petalTurtle.begin_fill()
-    petalTurtle.circle(25)
-    petalTurtle.end_fill()
-    petalTurtle.left(72)
+drawFiveCircles(petalTurtle, 25, 0, 220)
 
 centerTurtle.up()
 centerTurtle.goto(0, 205)
@@ -89,23 +72,9 @@ stampTurtle.goto(-2,220)
 stampTurtle.down()
 stampTurtle.stamp()
 
-sepalTurtle.up()
-sepalTurtle.goto(220, 0)
-sepalTurtle.down()
-for i in range(5):
-    sepalTurtle.begin_fill()
-    sepalTurtle.circle(50)
-    sepalTurtle.end_fill()
-    sepalTurtle.left(72)
+drawFiveCircles(sepalTurtle, 50, 220, 0)
 
-petalTurtle.up()
-petalTurtle.goto(220, 0)
-petalTurtle.down()
-for i in range(5):
-    petalTurtle.begin_fill()
-    petalTurtle.circle(25)
-    petalTurtle.end_fill()
-    petalTurtle.left(72)
+drawFiveCircles(petalTurtle, 25, 220, 0)
 
 centerTurtle.up()
 centerTurtle.goto(220, -15)
@@ -119,23 +88,9 @@ stampTurtle.goto(218,0)
 stampTurtle.down()
 stampTurtle.stamp()
 
-sepalTurtle.up()
-sepalTurtle.goto(0, -220)
-sepalTurtle.down()
-for i in range(5):
-    sepalTurtle.begin_fill()
-    sepalTurtle.circle(50)
-    sepalTurtle.end_fill()
-    sepalTurtle.left(72)
+drawFiveCircles(sepalTurtle, 50, 0, -220)
 
-petalTurtle.up()
-petalTurtle.goto(0, -220)
-petalTurtle.down()
-for i in range(5):
-    petalTurtle.begin_fill()
-    petalTurtle.circle(25)
-    petalTurtle.end_fill()
-    petalTurtle.left(72)
+drawFiveCircles(petalTurtle, 25, 0, -220)
 
 centerTurtle.up()
 centerTurtle.goto(0, -235)
@@ -149,23 +104,9 @@ stampTurtle.goto(-2,-220)
 stampTurtle.down()
 stampTurtle.stamp()
 
-sepalTurtle.up()
-sepalTurtle.goto(-220, 0)
-sepalTurtle.down()
-for i in range(5):
-    sepalTurtle.begin_fill()
-    sepalTurtle.circle(50)
-    sepalTurtle.end_fill()
-    sepalTurtle.left(72)
+drawFiveCircles(sepalTurtle, 50, -220, 0)
 
-petalTurtle.up()
-petalTurtle.goto(-220, 0)
-petalTurtle.down()
-for i in range(5):
-    petalTurtle.begin_fill()
-    petalTurtle.circle(25)
-    petalTurtle.end_fill()
-    petalTurtle.left(72)
+drawFiveCircles(petalTurtle, 25, -220, 0)
 
 centerTurtle.up()
 centerTurtle.goto(-220, -15)
