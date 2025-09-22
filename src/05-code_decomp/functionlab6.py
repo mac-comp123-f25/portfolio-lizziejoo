@@ -28,6 +28,7 @@ def drawBee(turt, centerX, centerY):
     stampTurtle.stamp()
     """ This function draws the stamp in the center. """
 
+def drawFlower(, centerX, centerY):
 
 
 """ Drawing boundaries of petal and filling it green. 
