@@ -26,12 +26,9 @@ def drawBee(turt, centerX, centerY):
     stampTurtle.goto(centerX, centerY)
     stampTurtle.down()
     stampTurtle.stamp()
+    """ This function draws the stamp in the center. """
 
-def drawFlower(turt1, turt2, turt3, turt4, centerX, centerY):
-    drawFiveCircles(sepalTurtle, 50, centerX, centerY)
-    drawFiveCircles(petalTurtle, 25, centerX, centerY)
-    drawCenterCircle(centerTurtle, centerX, centerY - 15)
-    drawBee(stampTurtle, centerX - 2, centerY)
+
 
 """ Drawing boundaries of petal and filling it green. 
 Petals are drawn counterclockwise on top of each other, being drawn from the center.
@@ -61,7 +58,13 @@ stampTurtle.speed(0)
 stampTurtle.shape("turtle")
 stampTurtle.hideturtle()
 
-drawFlower(sepalTurtle, petalTurtle. centerTurtle, stampTurtle, 0, 0)
+drawFiveCircles(sepalTurtle, 50, 0, 0)
+
+drawFiveCircles(petalTurtle, 25, 0, 0)
+
+drawCenterCircle(centerTurtle, 0, -15)
+
+drawBee(stampTurtle, -2, 0)
 
 drawFiveCircles(sepalTurtle, 50, 0, 220)
 
