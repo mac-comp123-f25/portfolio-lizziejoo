@@ -83,6 +83,17 @@ def next_word(text):
             word_str = word_str + ch
     return word_str
 
+def square_user_nums2():
+  # Initialize loop variable
+  while True:
+  user_inp = input("Enter the next number (negative to quit): ")
+  user_num = int(user_inp)
+  while user_num >= 0:
+    print(user_num, "squared is", user_num ** 2)
+    user_inp = input("Enter the next number (negative to quit): ")
+    user_num = int(user_inp)
+
+
 
 def print_seperator_line():
     """
