@@ -40,7 +40,7 @@ def square_user_nums():
     while user_num >= 0:
         print(user_num, "squared is", user_num ** 2)
         user_inp = input("Enter the next number (negative to quit): ")
-        user_num = int(user_inp) # Runs infinite amount of times without this code. 
+        user_num = int(user_inp) # Runs infinite amount of times without this code.
 
 
 def sum_to_n(top_num):
@@ -55,6 +55,8 @@ def sum_to_n(top_num):
         curr_val = curr_val + 3
 
     return total
+
+
 
 
 def next_word(text):
