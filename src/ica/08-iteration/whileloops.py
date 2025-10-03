@@ -53,11 +53,20 @@ def sum_to_n(top_num):
     while curr_val <= top_num:
         total = total + curr_val
         curr_val = curr_val + 3
+        print(curr_val, total)
 
     return total
 
+def add_user_nums():
+    sum_of_nums = 0
+    user_nums = int(input("Enter number: "))
+    while user_nums != 0:
+        sum_of_nums = sum_of_nums + user_nums
+        user_nums = int(input("Enter number: "))
 
+    return sum_of_nums
 
+print(add_user_nums())
 
 def next_word(text):
     """
