@@ -16,6 +16,16 @@ def apply_l_system(axiom: str, rules: dict, n: int):
 
     return s
 
+def apply_l_system(l_system: dict):
+    assert type(l_system) is dict
+    assert len(l_system) == 3
+    assert set(l_system.keys()) == {"axiom", "rules", "n"}
+
+    s = axiom
+    for _ in range(n):
+        s = apply_rules(s, rules)
+
+    return s
 
 def apply_rules(s: str, rules: dict):
     assert type(s) is str
@@ -47,3 +57,5 @@ if __name__ == "__main__":
 
     for i in range(10):
         print(apply_l_system(axiom, rules, i))
+
+
