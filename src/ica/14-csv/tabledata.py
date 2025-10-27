@@ -42,6 +42,12 @@ def lookup_office(name, direct_table):
 
     return "No entry: " + name
 
+def lookup_by_date(month, day, table):
+    day = str(day)
+    for row in table:
+        if row['Month'] == month and row['Day'] == day:
+            return row
+    return "No entry: " + month + " " + day
 
 def collect_by_building(building, table):
     """
@@ -115,3 +121,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
