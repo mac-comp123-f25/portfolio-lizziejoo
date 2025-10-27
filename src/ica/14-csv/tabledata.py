@@ -103,6 +103,7 @@ def daylight_hours(rise_hour, rise_min, set_hour, set_min):
     hour_diff = minute_diff / 60
     return hour_diff
 
+def avg_daylight_time(table):
 
 def main():
     print(lookup_phone('Fox, Susan', directory))
