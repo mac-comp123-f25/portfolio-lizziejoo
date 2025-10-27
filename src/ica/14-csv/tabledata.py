@@ -69,6 +69,13 @@ def collect_by_letter(letter, table):
 
     return match_list
 
+def select_by_month(month, table):
+    month_rows = []
+    for row in table:
+        if row['Month'] == month:
+            month_rows.append(row)
+    return month_rows
+
 def count_sunsets_before(hour_time, table):
     """
     Takes in the sunTable for the sunrise/sunset data, and counts how many
@@ -106,20 +113,20 @@ def main():
     print(sun_table[0])  # printing just the first row of data
     print_table(sun_table, field_names, 15)
 
-    # may15_data = lookup_by_date('May', 15, sun_table)
-    # print(may15_data)
-    # oct31_data = lookup_by_date('October', '31', sun_table)
-    # print(oct31_data)
+    may15_data = lookup_by_date('May', 15, sun_table)
+    print(may15_data)
+    oct31_data = lookup_by_date('October', '31', sun_table)
+    print(oct31_data)
 
     olri = collect_by_building('Olin-Rice', directory)
     print(olri)
     cc = collect_by_building('Campus Center', directory)
     print_table(cc, ['Name', 'Phone', 'Building', 'OfficeNum'])
 
-    # march_data = select_by_month('March', sun_table)
-    # july_data = select_by_month('July', sun_table)
-    # january_data = select_by_month('January', sun_table)
-    # print_table(march_data, field_names, 15)
+    march_data = select_by_month('March', sun_table)
+    july_data = select_by_month('July', sun_table)
+    january_data = select_by_month('January', sun_table)
+    print_table(march_data, field_names, 15)
 
     print("Sunsets before 6pm =", count_sunsets_before(18, sun_table))
     print("Sunsets before 10pm =", count_sunsets_before(22, sun_table))
