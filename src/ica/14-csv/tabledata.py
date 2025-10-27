@@ -61,6 +61,13 @@ def collect_by_building(building, table):
 
     return match_list
 
+def collect_by_letter(letter, table):
+    match_list = []
+    for row in table:
+        if row['Name'].startswith(letter):
+            match_list.append(row)
+
+    return match_list
 
 def count_sunsets_before(hour_time, table):
     """
