@@ -63,6 +63,7 @@ def get_expensive_states(table):
     of the five state names
     """
     # TODO: finish this function
+
     pass
 
 
@@ -76,6 +77,8 @@ def annual_wage(hourly_wage):
     * Each worker works 52 weeks per year (no vacation time!)
     """
     # TODO: finish this function
+    total_hours = 40 * 52 * 2  # 4160
+    return hourly_wage * total_hours
     pass
 
 
