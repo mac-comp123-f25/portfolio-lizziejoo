@@ -93,6 +93,16 @@ def get_gap_states(table):
     minimum wage is less than the living wage.
     """
     # TODO: finish this function
+    gap_states = []
+    for row in living_table:
+        # row['State'], row['Minimum Wage'], row['Living Wage'] expected
+        mw = row['Minimum Wage']
+        living = row['Living Wage']
+        annual = annual_wage(mw)  # <-- you already wrote this earlier
+
+        if annual < living:
+            gap_states.append(row['State'])
+    return gap_states
     pass
 
 
