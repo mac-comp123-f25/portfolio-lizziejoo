@@ -77,7 +77,7 @@ def annual_wage(hourly_wage):
     * Each worker works 52 weeks per year (no vacation time!)
     """
     # TODO: finish this function
-    total_hours = 40 * 52 * 2  # 4160
+    total_hours = 40 * 52 * 2
     return hourly_wage * total_hours
     pass
 
@@ -95,10 +95,9 @@ def get_gap_states(table):
     # TODO: finish this function
     gap_states = []
     for row in living_table:
-        # row['State'], row['Minimum Wage'], row['Living Wage'] expected
         mw = row['Minimum Wage']
         living = row['Living Wage']
-        annual = annual_wage(mw)  # <-- you already wrote this earlier
+        annual = annual_wage(mw)
 
         if annual < living:
             gap_states.append(row['State'])
@@ -155,10 +154,11 @@ def main():
     lw_fields, lw_data = read_living_wage_data('DataFiles/wages.csv')
     print_table(lw_data, lw_fields, 15)
 
+
     # # Sample calls for get_state_living_wage
-    # ark_liv_wage = get_state_living_wage('Arkansas', lw_data)
-    # print("Arkansas living wage is", ark_liv_wage)
-    # cal_liv_wage = get_state_living_wage("CA", lw_data)
+    ark_liv_wage = get_state_living_wage('Arkansas', lw_data)
+    print("Arkansas living wage is", ark_liv_wage)
+    cal_liv_wage = get_state_living_wage("CA", lw_data)
     # print("California living wage is", cal_liv_wage)
     # mn_liv_wage = get_state_living_wage("Minnesota", lw_data)
     # print("Minnesota living wage is", mn_liv_wage)

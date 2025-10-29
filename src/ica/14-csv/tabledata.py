@@ -115,6 +115,7 @@ def avg_daylight_time(table):
 
     return total / len(table)
 
+
 def main():
     print(lookup_phone('Fox, Susan', directory))
     print(lookup_phone('Shoop, Libby', directory))
