@@ -104,6 +104,16 @@ def daylight_hours(rise_hour, rise_min, set_hour, set_min):
     return hour_diff
 
 def avg_daylight_time(table):
+    total = 0
+    for row in table:
+        rise_hr  = int(row[2])
+        rise_min = int(row[3])
+        set_hr   = int(row[4])
+        set_min  = int(row[5])
+
+        total += daylight_hours(rise_hr, rise_min, set_hr, set_min)
+
+    return total / len(table)
 
 def main():
     print(lookup_phone('Fox, Susan', directory))
