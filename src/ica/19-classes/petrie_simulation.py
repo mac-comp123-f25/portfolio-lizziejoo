@@ -20,6 +20,10 @@ class Employee:
         variable that holds the comments received by this employee to zero.
         """
         # TODO: Implement this method then remove this line
+        self.gender = gender
+        self.comment = will_comment
+        self.comments_received = 0
+
         pass
 
     def __str__(self):
@@ -38,6 +42,7 @@ def print_employee_list(lst):
     by using the print() method
     """
     # TODO: Implement this function then remove this line
+
     pass
 
 
