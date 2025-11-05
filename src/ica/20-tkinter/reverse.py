@@ -1,7 +1,7 @@
 import tkinter as tk
 
 
-class ReverseGui:
+class BasicGui:
     def __init__(self):
         self.mainWin = tk.Tk()
         self.mainWin.title("String Reverser")
@@ -36,5 +36,5 @@ class ReverseGui:
     def run(self):
         self.mainWin.mainloop()
 
-myGui = ReverseGui()
+myGui = BasicGui()
 myGui.run()
