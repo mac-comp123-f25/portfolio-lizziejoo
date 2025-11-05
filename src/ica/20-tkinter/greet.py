@@ -30,10 +30,6 @@ class BasicGui:
     def run(self):
         self.mainWin.mainloop()
 
-    def run(self):
-        self.mainWin.mainloop()
-
-
 # ----- Main program -----
 myGui = BasicGui()
 myGui.run()
