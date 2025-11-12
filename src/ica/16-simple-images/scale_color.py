@@ -26,5 +26,4 @@ def weighted_scale(picture, w1, w2, w3):
 
     return new_pic
 
-
-
+pic = Picture("../SampleImages/antiqueTractors.jpg")
