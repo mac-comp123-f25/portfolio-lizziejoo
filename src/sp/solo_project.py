@@ -99,7 +99,7 @@ def draw_heart(t, size):
 def main():
     screen = turtle.Screen()
     screen.title("Custom Ornament Designer")
-    screen.bgcolor("lightblue")  # 🎨 light blue background
+    screen.bgcolor("lightblue")  #  light blue background
 
     t = turtle.Turtle()
     t.speed(8)
