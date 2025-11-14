@@ -15,3 +15,5 @@ copy_pic_into(green_turtle, scene, 25, 25)
 copy_pic_into(green_turtle, scene, 200, 200)
 copy_pic_into(green_turtle, scene, 400, 200)
 scene.show()
+
+keep_windows_open()
